@@ -23,11 +23,11 @@
     //1、明显的要改变this的指向
     //2、需要“借”用其它类上的方法的时候，需要用到
     var oLis=document.getElementsByTagName("li");
-    try{
+   /* try{
         var a=[].slice.call(oLis,0);
     }catch (e){
 
-    }
+    }*/
     var a=[].slice.call(oLis,0);//this不是javascript对象
     //凡是类似于数组的数据，都可以用call或apply的方式来间接的调用数组类上的方法
     Array.prototype.slice2=function(m,n){
