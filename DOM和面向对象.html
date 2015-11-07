@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul	>
+    <!-- 注释 --><li>1</li><div>div</div><p>p</p>
+</ul>
+
+</body>
+</html>
+<script>
+    var oLi=document.getElementsByTagName("li").item(0);
+    var oDiv=oLi.nextElementSibling;
+    var oP=oDiv.nextElementSibling;
+    var oText=oP.nextSibling;
+    oComment=oLi.previousSibling;
+    //问题：如何知道一个实例对应的类
+    //问题2：如果知道一个实例对应的这个类的父类和所有祖先类
+    //问题3：各个HTML标签元素对应的类有什么特点
+
+</script>
